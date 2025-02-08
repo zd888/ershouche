@@ -1,0 +1,158 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#EAF9FF",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏  
+					"bounce": "none",
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/index/webView",
+			"style": {
+				"navigationBarTitleText": "网页",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/index/details",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#EAF9FF"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+
+		{
+			"path": "pages/index/classify/detail",
+			"style": {
+				"navigationBarTitleText": "车辆详情"
+			}
+		},
+
+
+
+		{
+			"path": "pages/msg/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏  
+					"bounce": "none",
+					"scrollIndicator": "none"
+				}
+			}
+		},
+
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#EAF9FF",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏  
+					"bounce": "none",
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "手机号登录",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/public/bind",
+			"style": {
+				"navigationBarTitleText": "手机号绑定",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "my",
+		"pages": [{
+				"path": "citys/citys",
+				"style": {
+					"navigationBarTitleText": "选择城市"
+				}
+			},
+			{
+				"path": "detail/listDetails",
+				"style": {
+					"navigationBarTitleText": "动态详情"
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "同城服务",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#20A2FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index_.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/publish/index",
+				"iconPath": "static/tabbar/car.png",
+				"selectedIconPath": "static/tabbar/car_.png",
+				"text": "卖车"
+			},
+			{
+				"pagePath": "pages/index/details",
+				"iconPath": "static/tabbar/shequ.png",
+				"selectedIconPath": "static/tabbar/shequ_.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_.png",
+				"text": "我的"
+			}
+		]
+	}
+}
