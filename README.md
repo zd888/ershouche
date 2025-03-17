@@ -12,7 +12,6 @@
 ### [https://ershouche.xianmaxiong.com](https://ershouche.xianmaxiong.com)
 
 ## 联系作者
-### <img src="https://shop.szsqx.cn/images/qrcode.jpg" width="300" height="300">
+### <img src="https://www.unvue.cn/images/qrcode_weixin.jpg" width="300" height="300">
 
-### 公司官网：[https://www.szsqx.cn](https://www.szsqx.cn)
-### 产品介绍：[https://shop.szsqx.cn](https://shop.szsqx.cn)
+### 公司官网：[https://www.unvue.cn](https://www.unvue.cn)
